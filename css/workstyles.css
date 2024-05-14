@@ -1,0 +1,229 @@
+/* Nav-Tab */
+.nav-year {
+  background-color: #f0f4fb;
+  padding-top: 15vh;
+  position: inherit;
+  width:inherit;
+}
+.nav-link {
+  color: #6b93d6
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #f0f4fb;
+  background-color: #6b93d6;
+  border-color: #6b93d6 #6b93d6 #5cb874;
+}
+.nav-tabs .nav-link {
+  border-bottom: 3px solid transparent;
+}
+
+/* Year Title */
+.title-pad {
+  padding-right: 0;
+  margin-right: 0;
+}
+.title-div {
+  padding-right: 0; 
+  padding-top: 20px; 
+}
+.title-div-primary {
+  text-align: center;
+}
+.title-div-primary h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-bottom: 17px;
+  position: relative;
+}
+.title-div-primary h1::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: rgb(165, 165, 165);
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.title-div-primary h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #5cb874;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.title-div-secondary {
+  text-align: center;
+  font-weight: bolder;
+  background-color:#aecc81;
+}
+.title-div-secondary h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 17px;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: #aecc81;
+}
+.title-div-secondary h1::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: rgb(54, 54, 54);
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.title-div-secondary h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--secondary-color);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.title-div-first {
+  padding-top: 5.5vh;
+  padding-right: 0;
+}
+
+/* Content Section*/
+.content-common {
+  padding: 10% inherit;
+  padding-top: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.content-primary {
+  background-color: #f0f4fb;
+}
+.content-secondary {
+  background-color:#aecc81;
+}
+
+/* Event */
+.event-div {
+  padding-top: 5.9vh;
+  padding-bottom: 6vh;
+}
+.event-title {
+  color: #545454;
+  font-weight: bold;
+  text-align: left;
+  font-size: 19px;
+  margin-bottom: 0;
+  color: #212529;
+}
+.event-info {
+  color: #545454;
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.button--link {
+  letter-spacing: 1px;
+  font-family: lato,Geneva,Tahoma,sans-serif;
+  color: #233f96;
+  align-self:flex-start;
+  font-size: 13px;
+  font-weight: 700;
+  padding-bottom: 0;
+} 
+
+/* Carousel */
+.carousel-inner {
+  padding-top: 10px;
+  height: 300px;
+}
+.carousel-img {
+  width:456px;
+  height: 280px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.5);
+}
+.carousel-control-prev-icon {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/467/467274.png);
+}
+.carousel-control-next-icon {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/467/467282.png);
+}
+.carousel-caption {
+  width:100%;
+  left:0 ;
+}
+h5 {
+  text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black;
+  margin-bottom: 0;
+}
+
+/* Footer */
+#rollUp {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  margin: 15px;
+}
+#rollUp.scroll {
+  display: flex;
+}
+#rollUp.btn {
+  background-color: #6b93d6;
+  height: 6vh;
+  width: 6vh;
+  justify-content: center;
+  align-items: center;
+}
+.fa-chevron-up {
+  font-size: 15px;
+}
+.footer-sevatech-logo {
+  height: auto;
+  width: 180px;
+}
+
+/* Media Query for Desktop Web*/
+@media (min-width: 767px) {
+  .carousel-work {
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+  }
+
+}
+
+/* Media Query for Mobile Web */
+@media (max-width:500px ){
+  .carousel-img {
+    width: 290px;
+    height: 176.9px;
+  }
+  .carousel-inner {
+    height: 196.9px;
+    padding-top: 10px;
+  }
+  .carousel-work {
+    width: 330px;
+  }
+  .carousel-caption {
+    padding-bottom: 5px;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+}
