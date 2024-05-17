@@ -363,8 +363,8 @@ nav {
   margin: 0 0 30px 0;
   object-fit: cover;
   object-position: center;
-  height: 280px;
-  width: 320px;
+  height: 200px;
+  width: 200px;
 }
 .team .member h4 {
   font-weight: 700;
